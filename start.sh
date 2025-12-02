@@ -22,4 +22,4 @@ echo "🌱 Seeding database..."
 npx prisma db seed
 
 echo "🔥 Starting server..."
-npm start
+npm run server
