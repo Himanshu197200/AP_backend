@@ -18,5 +18,8 @@ if [ -f .env ]; then
 fi
 npx prisma generate
 
+echo "🌱 Seeding database..."
+npx prisma db seed
+
 echo "🔥 Starting server..."
 npm start
