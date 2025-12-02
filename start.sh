@@ -16,8 +16,7 @@ if [ -f .env ]; then
   echo "🔐 Loading environment variables from .env"
   export $(grep -v '^#' .env | xargs)
 fi
-
-
+npx prisma generate
 
 echo "🔥 Starting server..."
 npm start
