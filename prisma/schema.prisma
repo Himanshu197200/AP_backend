@@ -33,6 +33,7 @@ model User {
   name         String
   email        String   @unique
   password     String?
+  clerkId      String?  @unique
   role         Role     @default(STUDENT)
   branch       String?
   year         Int?
